@@ -21,6 +21,24 @@ span.navbar-icon i {
 span.navbar-icon a {
   color: black;
 }
+.slider-text-main {
+    height: 100%;
+    min-height: 500px;
+}
+h1.hero_heading {
+    font-size: 110px;
+    text-align: start;
+    line-height: 6rem;
+}
+p.hero_subheading {
+    text-align: start;
+    font-size: 16px;
+    padding: 0px 20px;
+}
+
+
+
+
 @media (min-width: 320px) and (max-width: 425px) { 
 
     nav.navbar.navbar-expand-lg.navbar-light.sm\:p-0 {
