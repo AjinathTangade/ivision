@@ -1,0 +1,47 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+li.nav-item:after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #000;
+    transition: width .3s;
+}
+li.nav-item:hover:after {
+    width: 100%;
+}
+span.navbar-icon i {
+    font-size: 20px;
+}
+span.navbar-icon a {
+  color: black;
+}
+@media (min-width: 320px) and (max-width: 425px) { 
+
+    nav.navbar.navbar-expand-lg.navbar-light.sm\:p-0 {
+        padding: 0.5rem 0rem;
+    }
+    div#navbarText {
+        margin: 20px 0px 0px 0px;
+    }
+    ul.navbar-nav.m-auto.mb-2.mb-lg-0.d-flex.gap-4 {
+        gap: 0px !important;
+        margin: 20px 0px !important;
+    }
+    a.nav-link.fw-bolder {
+        font-weight: 400 !important;
+    }
+    .w-25.d-flex.justify-content-end {
+        width: 33% !important;
+        
+    }
+    span.navbar-icon i {
+        font-size: 16px;
+    }
+
+ }
