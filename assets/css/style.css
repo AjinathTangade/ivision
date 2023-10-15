@@ -30,17 +30,21 @@ span.navbar-icon a {
     height: 100%;
     min-height: 400px;
 }
+.col-md-8.slider-text-main {
+    min-height: 340px;
+}
 
 h1.hero_heading {
-    font-size: 90px;
+    font-size: 58px;
     text-align: start;
-    line-height: 6rem;
+    line-height: 4rem;
 }
 
 p.hero_subheading {
     text-align: start;
-    font-size: 16px;
-    padding: 0px 20px;
+    font-size: 18px;
+    padding: 6px 5px;
+    font-family: system-ui;
 }
 
 .features-product-img {
@@ -106,18 +110,54 @@ span::after {
 
 span::after {
     right: 15px;
-
 }
 
 a.text-decoration-none:hover span::before,
 a.text-decoration-none:hover span::after {
     height: 230px;
-
 }
 
-.features-product h2, p {
+.features-product h2,
+p {
     font-family: auto;
 }
+
+span.carousel-control-prev-icon.carousel-control-prev-icon-product {
+    background-image: url(../img/back.png) !important;
+}
+
+span.carousel-control-next-icon.carousel-control-next-icon-product {
+    background-image: url(../img/next.png) !important;
+}
+
+button.carousel-control-prev.carousel-control-prev-product {
+    left: -60px;
+}
+
+button.carousel-control-next.carousel-control-next-product {
+    right: -60px;
+}
+
+h2.letest-collection-heading-main {
+    font-family: none;
+    font-size: 65px;
+    margin: 0;
+}
+
+h6.letest-collection-heading {
+    font-size: 50px;
+    font-weight: 100;
+    margin: 0;
+}
+
+p.letest-collection-subheading {
+    font-size: 18px;
+    font-family: system-ui;
+}
+
+
+
+
 @media (min-width: 320px) and (max-width: 426px) {
 
     nav.navbar.navbar-expand-lg.navbar-light.sm\:p-0 {
@@ -139,7 +179,12 @@ a.text-decoration-none:hover span::after {
 
     .w-25.d-flex.justify-content-end {
         width: 33% !important;
+        margin-top: 8px;
+    }
 
+    p.hero_subheading {
+        width: 100%;
+        max-width: 200px;
     }
 
     span.navbar-icon i {
@@ -155,7 +200,9 @@ a.text-decoration-none:hover span::after {
         top: 0px;
         left: -36px;
     }
-
+    .col-md-8.slider-text-main {
+        min-height: 102px;
+    }
     h1.hero_heading {
         font-size: 25px;
         text-align: start;
@@ -175,4 +222,26 @@ a.text-decoration-none:hover span::after {
         font-size: 10px;
     }
 
+    h2.letest-collection-heading-main,
+    h6.letest-collection-heading {
+        font-size: 35px;
+        text-align: center;
+    }
+
+    .card-body {
+        padding: 6px;
+    }
+
+    h5.card-title {
+        font-size: 12px;
+    }
+
+    h6.card-subheading {
+        font-size: 10px;
+    }
+
+    li.nav-item:hover:after {
+        width: 20%;
+
+    }
 }
