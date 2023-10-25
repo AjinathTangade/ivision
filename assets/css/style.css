@@ -4,7 +4,9 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-
+p{
+    font-family: 'Poppins', sans-serif !important;
+}
 li.nav-item:after {
     content: '';
     display: block;
@@ -139,12 +141,16 @@ button.carousel-control-next.carousel-control-next-product {
     right: -60px;
 }
 
-h2.letest-collection-heading-main {
+h2.letest-collection-heading-main{
     font-family: none;
     font-size: 65px;
     margin: 0;
 }
 
+.form-heading {
+    font-family: none;
+    font-size: 50px;
+}
 h6.letest-collection-heading {
     font-size: 50px;
     font-weight: 100;
@@ -423,8 +429,22 @@ a.text-decoration-none.text-secondary {
 }
 
 
+/* slide end */
 
+p.offer-subheading-second {
+    font-size: 14px;
+}
+.coupen-code {
+    border-style: dashed !important;
+}
 
+a.pt-2.text-white {
+    font-size: 14px;
+}
+
+.container-fluid.support {
+    background-color: #e9e8efba;
+}
 
 @media (min-width: 320px) and (max-width: 426px) {
 
