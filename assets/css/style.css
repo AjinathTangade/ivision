@@ -4,26 +4,95 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-p{
+
+p {
     font-family: 'Poppins', sans-serif !important;
 }
+
 li.nav-item:after {
     content: '';
     display: block;
     width: 0;
     height: 2px;
-    background: #000;
+    background: #bababa;
     transition: width .3s;
 }
+p.spin-text{
+    font-size: 14px;
+}
+a.support-content-anchor:after {
+    content: "";
+    border: 0.5px solid #cbcbcbfa;
+    height: 28px;
+    position: absolute;
+    margin-left: 50px;
+    /* padding-right: 20px; */
+}
 
+  #spin:after {
+    content:"";
+    animation: spin 10s linear infinite;
+  }
+  @keyframes spin {
+    0% { content:"30% Off Everything | Code: SPOOKY30"; }
+    10% { content:"30% Off Everything | Code: SPOOKY30";}
+    60% { content: "2-Day Delivery - Get your glasses faster!"; }
+    100%{ content:"30% Off Everything | Code: SPOOKY30"; }
+  }
+ul.navbar-nav.m-auto.mb-2.mb-lg-0.d-flex {
+    gap: 20px;
+}
 li.nav-item:hover:after {
     width: 100%;
 }
-
+a.nav-link.fw-bold {
+    font-size: 14px;
+}
 span.navbar-icon i {
     font-size: 20px;
 }
+::-ms-input-placeholder { /* Edge 12-18 */
+    font-size: 13px;
+  }
+  
+  ::placeholder {
+    font-size: 13px;
+  }
+input.form-control {
+    border-radius: 43px;
+}
+input.form-control {
 
+    line-height: 9;
+
+    /* padding: 0px !important; */
+    height: 36px !important;
+    max-width: 185px !important;
+}
+
+.dropdown:hover>.dropdown-menu {
+    display: block;
+  }
+  
+  .dropdown>.dropdown-toggle:active {
+    /*Without this, clicking will make it sticky*/
+      pointer-events: none;
+  }
+
+
+
+
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}
 span.navbar-icon a {
     color: black;
 }
@@ -111,6 +180,13 @@ span::after {
     margin: 10px;
 }
 
+.navbar-brand img {
+    width: 100%;
+    max-width: 80px;
+    height: 50px;
+    object-fit: contain;
+}
+
 span::after {
     right: 15px;
 }
@@ -141,7 +217,7 @@ button.carousel-control-next.carousel-control-next-product {
     right: -60px;
 }
 
-h2.letest-collection-heading-main{
+h2.letest-collection-heading-main {
     font-family: none;
     font-size: 65px;
     margin: 0;
@@ -151,6 +227,7 @@ h2.letest-collection-heading-main{
     font-family: none;
     font-size: 50px;
 }
+
 h6.letest-collection-heading {
     font-size: 50px;
     font-weight: 100;
@@ -434,6 +511,7 @@ a.text-decoration-none.text-secondary {
 p.offer-subheading-second {
     font-size: 14px;
 }
+
 .coupen-code {
     border-style: dashed !important;
 }

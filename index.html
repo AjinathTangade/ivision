@@ -33,7 +33,16 @@
 </head>
 
 <body>
-  <header class="bg-light py-2 container-fluid md:p-0">
+  <header class="bg-light container-fluid md:p-0">
+    <div class="container-fluid support py-3">
+      <div class="container">
+        <div class="row">
+          <div class="support-content d-flex justify-content-center align-items-center w-100">
+            <p class="spin-text position-relative m-0"><strong id="spin" class="pr-2"></strong>Terms & Conditions</p>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="container">
       <nav class="navbar navbar-expand-lg navbar-light sm:p-0 ">
         <div
@@ -42,30 +51,45 @@
             aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="w-25">
+          <div class=";ogo-header">
             <a class="navbar-brand" href="#"><img src="./assets/img/logo.png" alt="logo"
                 style="width: 100%; max-width: 130px;"></a>
           </div>
-          <div class="collapse navbar-collapse w-50" id="navbarText">
+          <div class="collapse navbar-collapse w-50 d-flex justify-content-center align-items-center id="navbarText">
             <ul class="navbar-nav m-auto mb-2 mb-lg-0 d-flex">
-              <li class="nav-item px-2">
-                <a class="nav-link active fw-bold" aria-current="page" href="#">Home</a>
+              <li class="nav-item px-1">
+                <!-- <a class="nav-link active fw-bold" aria-current="page" href="#">Eyeglasses</a> -->
+                <div class="dropdown">
+                  <a class="nav-link active fw-bold" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Eyeglasses
+                  </a>
+                  <div class="dropdown-menu mt-3" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </div>
+           
               </li>
-              <li class="nav-item px-2">
-                <a class="nav-link fw-bold" href="#">Features</a>
+              <li class="nav-item px-1">
+                <a class="nav-link fw-bold" href="#">Sunglasses</a>
               </li>
-              <li class="nav-item px-2">
-                <a class="nav-link fw-bold" href="#">Products</a>
+              <li class="nav-item px-1">
+                <a class="nav-link fw-bold" href="#">Premium Brands</a>
               </li>
-              <li class="nav-item px-2">
-                <a class="nav-link fw-bold fw-bolder" href="#">Shop</a>
+              <li class="nav-item px-1">
+                <a class="nav-link fw-bold fw-bolder" href="#">Lenses</a>
               </li>
             </ul>
+            <div class="form-group has-search position-relative m-0">
+              <span class="fa fa-search form-control-feedback"> <i class="bi bi-search"></i></span>
+              <input type="text" class="form-control pl-5 py-0" placeholder="Search">
+            </div>
           </div>
-          <div class="w-25 d-flex justify-content-end">
-            <span class="navbar-icon mr-3 "><a href="#"><i class="bi bi-search fa-7x"></i></a></span>
-            <span class="navbar-icon mr-3"><a href="#"><i class="bi bi-person fa-7x"></i></a></span>
-            <span class="navbar-icon mr-3"><a href=""><i class="bi bi-heart fa-x"></i></a></span>
+          <div class=" d-flex justify-content-end">
+            <!-- <span class="navbar-icon mr-3 "><a href="#"><i class="bi bi-search fa-7x"></i></a></span> -->
+            <span class="navbar-icon mx-3"><a href="#"><i class="bi bi-person fa-7x"></i></a></span>
+            <span class="navbar-icon mr-3"><a href=""><i class="bi bi-heart fa-7x"></i></a></span>
             <span class="navbar-icon"> <a href="#"><i class="bi bi-cart3 fa-7x"></i></a> </span>
           </div>
         </div>
@@ -127,11 +151,11 @@
       <div class="container-fluid support py-3">
         <div class="container">
           <div class="row">
-            <div class="support-content d-flex justify-content-between align-items-center w-100">
-              <a href="#" class="text-secondary"> <span><i class="bi bi-clock-history"></i></span>14-Day Free Returns</a>
-              <a href="#" class="text-secondary"> <span><i class="bi bi-headset"></i></span>24/7 Customer Service</a>
-              <a href="#" class="text-secondary"> <span><i class="bi bi-shield-plus"></i></span>Vision Insurance</a>
-              <a href="#" class="text-secondary"><strong>EveryVision</strong><span><img src="./assets/img/star.svg" alt=""></span> <span>216k+
+            <div class="support-content d-flex justify-content-between align-items-center w-100 position-relative">
+              <a href="#" class="text-secondary px-4 support-content-anchor"> <span class="pr-2"><i class="bi bi-clock-history"></i></span>14-Day Free Returns</a>
+              <a href="#" class="text-secondary px-4 support-content-anchor"> <span class="pr-2"><i class="bi bi-headset"></i></span>24/7 Customer Service</a>
+              <a href="#" class="text-secondary px-4 support-content-anchor"> <span class="pr-2"><i class="bi bi-shield-plus"></i></span>Vision Insurance</a>
+              <a href="#" class="text-secondary px-4 support-content-anchor-last"><strong>EveryVision</strong><span><img src="./assets/img/star.svg" alt=""></span> <span>216k+
                   Reviews</span> </a>
             </div>
           </div>
@@ -410,8 +434,8 @@
     <section>
       <div class="container my-5">
         <div class="row">
-          <div class="col-md-4">
-            <div class="border px-4 py-5 mb-4">
+          <div class="col-md-4 d-flex justify-content-center align-items-center">
+            <div class="border px-4 py-5">
               <div class="offer-main-first pb-4">
                 <h3 class="offer-heading-first font-weight-bold">Deal Of The Day</h3>
                 <p class="offer-subheading-second">Commit your decision to paper, just to bring it into focus. Then, go
@@ -754,10 +778,6 @@
     </section>
 
   </main>
-
-
-
-
   <script src="./assets/js/javasript.js"></script>
 </body>
 
