@@ -33,69 +33,132 @@
 </head>
 
 <body>
-  <header class="bg-light container-fluid md:p-0">
-    <div class="container-fluid support py-3">
-      <div class="container">
-        <div class="row">
-          <div class="support-content d-flex justify-content-center align-items-center w-100">
-            <p class="spin-text position-relative m-0"><strong id="spin" class="pr-2"></strong>Terms & Conditions</p>
-          </div>
+  <div class="container-fluid support py-3">
+    <div class="container">
+      <div class="row">
+        <div class="support-content d-flex justify-content-center align-items-center w-100">
+          <p class="spin-text position-relative m-0"><strong id="spin" class="pr-2"></strong>Terms & Conditions</p>
         </div>
       </div>
     </div>
-    <div class="container">
-      <nav class="navbar navbar-expand-lg navbar-light sm:p-0 ">
-        <div
-          class="d-flex justify-content-between  xl:d-flex xl:justify-content-evenly xl:align-items-center container">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
-            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class=";ogo-header">
-            <a class="navbar-brand" href="#"><img src="./assets/img/logo.png" alt="logo"
-                style="width: 100%; max-width: 130px;"></a>
-          </div>
-          <div class="collapse navbar-collapse w-50 d-flex justify-content-center align-items-center id="navbarText">
-            <ul class="navbar-nav m-auto mb-2 mb-lg-0 d-flex">
-              <li class="nav-item px-1">
-                <!-- <a class="nav-link active fw-bold" aria-current="page" href="#">Eyeglasses</a> -->
-                <div class="dropdown">
-                  <a class="nav-link active fw-bold" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Eyeglasses
-                  </a>
-                  <div class="dropdown-menu mt-3" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
+  </div>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light sm:p-0 mx-3">
+      <div class="d-flex justify-content-between  xl:d-flex xl:justify-content-evenly xl:align-items-center container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="logo-header">
+          <a class="navbar-brand" href="#"><img src="./assets/img/logo.png" alt="logo"
+              style="width: 100%; max-width: 130px;"></a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav m-auto mb-2 mb-lg-0 d-flex">
+            <li class="nav-item px-1">
+              <!-- <a class="nav-link active fw-bold" aria-current="page" href="#">Eyeglasses</a> -->
+              <div class="dropdown">
+                <a class="nav-link active fw-bold" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  Eyeglasses
+                </a>
+                <div class="dropdown-menu mt-3 dropdown-main-menu" aria-labelledby="dropdownMenuButton">
+                  <div class="dropdown-main d-flex justify-content-between">
+                    <div class="dropdown-first-first pr-4">
+                      <ul class="list-unstyled">
+                        <h6 class="text-secondary">Shop</h6>
+                        <li><a href="#" class="text-dark">Eyeglasses</a></li>
+                        <li><a href="#" class="text-dark">Women’s Eyeglasses</a></li>
+                        <li><a href="#" class="text-dark">Men’s Eyeglasses</a></li>
+                        <li><a href="#" class="text-dark">Kids’ Eyeglasses</a></li>
+                        <li><a href="#" class="text-dark">On Sale</a></li>
+                      </ul>             
+                    </div>
+                    <div class="dropdown-first-second pr-3">
+                      <ul class="list-unstyled">
+                        <h6 class="text-secondary">Featured</h6>
+                        <li><a href="#" class="text-dark">New Arrivals</a></li>
+                        <li><a href="#" class="text-dark">Ray-Ban Glasses</a></li>
+                        <li><a href="#" class="text-dark">2-Day Delivery</a></li>
+                        <li><a href="#" class="text-dark">Eyeglass Frames</a></li>
+                        <li><a href="#" class="text-dark">Glasses under $19</a></li>
+                      </ul>
+                    </div>
+                    <div class="dropdown-first-third">
+                          <div class="dropdown-first-third-sub d-flex justify-content-between align-items-center">
+                            <img src="./assets/img/drop-img-1.png" alt="drop-img-1" class="drop-img">
+                            <img src="./assets/img/drop-img-2.png" alt="drop-img-2" class="drop-img">
+                            <img src="./assets/img/drop-img-3.png" alt="drop-img-3" class="drop-img">
+                          </div>
+                    </div>
                   </div>
                 </div>
-           
-              </li>
-              <li class="nav-item px-1">
-                <a class="nav-link fw-bold" href="#">Sunglasses</a>
-              </li>
-              <li class="nav-item px-1">
-                <a class="nav-link fw-bold" href="#">Premium Brands</a>
-              </li>
-              <li class="nav-item px-1">
-                <a class="nav-link fw-bold fw-bolder" href="#">Lenses</a>
-              </li>
-            </ul>
-            <div class="form-group has-search position-relative m-0">
-              <span class="fa fa-search form-control-feedback"> <i class="bi bi-search"></i></span>
-              <input type="text" class="form-control pl-5 py-0" placeholder="Search">
-            </div>
-          </div>
-          <div class=" d-flex justify-content-end">
-            <!-- <span class="navbar-icon mr-3 "><a href="#"><i class="bi bi-search fa-7x"></i></a></span> -->
-            <span class="navbar-icon mx-3"><a href="#"><i class="bi bi-person fa-7x"></i></a></span>
-            <span class="navbar-icon mr-3"><a href=""><i class="bi bi-heart fa-7x"></i></a></span>
-            <span class="navbar-icon"> <a href="#"><i class="bi bi-cart3 fa-7x"></i></a> </span>
-          </div>
+              </div>
+
+            </li>
+            <li class="nav-item px-1">
+              <div class="dropdown">
+                <a class="nav-link active fw-bold" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  Sunglasses
+                </a>
+                <div class="dropdown-menu mt-3 dropdown-main-menu" aria-labelledby="dropdownMenuButton">
+                  <div class="dropdown-main d-flex justify-content-between">
+                    <div class="dropdown-first-first pr-4">
+                      <ul class="list-unstyled">
+                        <h6 class="text-secondary">Shop</h6>
+                        <li><a href="#" class="text-dark">Eyeglasses</a></li>
+                        <li><a href="#" class="text-dark">Women’s Eyeglasses</a></li>
+                        <li><a href="#" class="text-dark">Men’s Eyeglasses</a></li>
+                        <li><a href="#" class="text-dark">Kids’ Eyeglasses</a></li>
+                        <li><a href="#" class="text-dark">On Sale</a></li>
+                      </ul>             
+                    </div>
+                    <div class="dropdown-first-second pr-3">
+                      <ul class="list-unstyled">
+                        <h6 class="text-secondary">Featured</h6>
+                        <li><a href="#" class="text-dark">New Arrivals</a></li>
+                        <li><a href="#" class="text-dark">Ray-Ban Glasses</a></li>
+                        <li><a href="#" class="text-dark">2-Day Delivery</a></li>
+                        <li><a href="#" class="text-dark">Eyeglass Frames</a></li>
+                        <li><a href="#" class="text-dark">Glasses under $19</a></li>
+                      </ul>
+                    </div>
+                    <div class="dropdown-first-third">
+                          <div class="dropdown-first-third-sub d-flex justify-content-between align-items-center">
+                            <img src="./assets/img/drop-img-1.png" alt="drop-img-1" class="drop-img">
+                            <img src="./assets/img/drop-img-2.png" alt="drop-img-2" class="drop-img">
+                            <img src="./assets/img/drop-img-3.png" alt="drop-img-3" class="drop-img">
+                          </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- <a class="nav-link fw-bold" href="#">Sunglasses</a> -->
+            </li>
+            <li class="nav-item px-1">
+              <a class="nav-link fw-bold" href="#">Premium Brands</a>
+            </li>
+            <li class="nav-item px-1">
+              <a class="nav-link fw-bold fw-bolder" href="#">Lenses</a>
+            </li>
+          </ul>
+
         </div>
-      </nav>
-    </div>
+        <div class="form-group has-search position-relative m-0 d-none d-lg-block d-md-block">
+          <span class="fa fa-search form-control-feedback"> <i class="bi bi-search"></i></span>
+          <input type="text" class="form-control pl-5 py-0" placeholder="Search">
+        </div>
+        <div class=" d-flex justify-content-end">
+          <!-- <span class="navbar-icon mr-3 "><a href="#"><i class="bi bi-search fa-7x"></i></a></span> -->
+          <span class="navbar-icon mx-3"><a href="#"><i class="bi bi-person fa-7x"></i></a></span>
+          <span class="navbar-icon mr-3"><a href=""><i class="bi bi-heart fa-7x"></i></a></span>
+          <span class="navbar-icon"> <a href="#"><i class="bi bi-cart3 fa-7x"></i></a> </span>
+        </div>
+      </div>
+    </nav>
   </header>
+
   <!-- header end -->
   <main>
     <section>
@@ -110,7 +173,7 @@
               <img class="d-block w-100" src="./assets/img/slider-1.webp" alt="First slide">
               <div class="carousel-caption ">
                 <div class="row">
-                  <div class="col-md-6 slider-text-main">
+                  <div class="col-md-12 col-lg-6 slider-text-main">
                     <h1 class="hero_heading text-secondary">Modern and timeless glasses</h1>
                     <p class="hero_subheading text-secondary">Buy Trending Classic Eyewear
                     </p>
@@ -118,7 +181,7 @@
                       class="btn btn-dark rounded d-flex justify-content-start align-items-start ml-1 py-2 px-4 slider-btn">Shop
                       Now</button>
                   </div>
-                  <div class="col-md-6"></div>
+                  <div class="col-md-12 col-lg-6 "></div>
                 </div>
               </div>
             </div>
@@ -126,14 +189,14 @@
               <img class="d-block w-100" src="./assets/img/slider-2.webp" alt="Second slide">
               <div class="carousel-caption ">
                 <div class="row">
-                  <div class="col-md-8 slider-text-main">
+                  <div class="col-md-12 col-lg-6 slider-text-main">
                     <h1 class="hero_heading">Bestseller Premium Sunglasses</h1>
                     <p class="hero_subheading">Buy Trending Classic Eyewear</p>
                     <button type="button"
                       class="btn btn-dark d-flex justify-content-start align-items-start ml-1 py-2 px-4 slider-btn">Shop
                       Now</button>
                   </div>
-                  <div class="col-md-4"></div>
+                  <div class="col-md-12 col-lg-6"></div>
                 </div>
               </div>
             </div>
@@ -148,14 +211,18 @@
           </a>
         </div>
       </div>
-      <div class="container-fluid support py-3">
+      <div class="container-fluid support py-3 d-none d-md-block d-lg-block">
         <div class="container">
           <div class="row">
             <div class="support-content d-flex justify-content-between align-items-center w-100 position-relative">
-              <a href="#" class="text-secondary px-4 support-content-anchor"> <span class="pr-2"><i class="bi bi-clock-history"></i></span>14-Day Free Returns</a>
-              <a href="#" class="text-secondary px-4 support-content-anchor"> <span class="pr-2"><i class="bi bi-headset"></i></span>24/7 Customer Service</a>
-              <a href="#" class="text-secondary px-4 support-content-anchor"> <span class="pr-2"><i class="bi bi-shield-plus"></i></span>Vision Insurance</a>
-              <a href="#" class="text-secondary px-4 support-content-anchor-last"><strong>EveryVision</strong><span><img src="./assets/img/star.svg" alt=""></span> <span>216k+
+              <a href="#" class="text-secondary px-4 support-content-anchor"> <span class="pr-2"><i
+                    class="bi bi-clock-history"></i></span>14-Day Free Returns</a>
+              <a href="#" class="text-secondary px-4 support-content-anchor"> <span class="pr-2"><i
+                    class="bi bi-headset"></i></span>24/7 Customer Service</a>
+              <a href="#" class="text-secondary px-4 support-content-anchor"> <span class="pr-2"><i
+                    class="bi bi-shield-plus"></i></span>Vision Insurance</a>
+              <a href="#" class="text-secondary px-4 support-content-anchor-last"><strong>EveryVision</strong><span><img
+                    src="./assets/img/star.svg" alt=""></span> <span>216k+
                   Reviews</span> </a>
             </div>
           </div>
@@ -285,15 +352,15 @@
     <!-- featured section end -->
     <section>
       <div class="letest-collection container mb-4">
-        <div class="row">
-          <div class="col-md-2 col-lg-2 d-flex justify-content-center align-items-center">
+        <div class="row d-flex flex-md-column flex-lg-row">
+          <div class="col-md-12 col-lg-2 d-flex justify-content-center align-items-center flex-md-column">
             <div class="">
               <h6 class="letest-collection-heading">WEAR THE</h6>
               <h2 class="letest-collection-heading-main">TREND</h2>
               <p class="letest-collection-subheading">Our hottest collections</p>
             </div>
           </div>
-          <div class="col-md-10">
+          <div class="col-md-10 m-auto">
             <div id="carouselExampleControlsProduct" class="carousel carousel-dark slide" data-bs-ride="carousel">
               <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -434,8 +501,8 @@
     <section>
       <div class="container my-5">
         <div class="row">
-          <div class="col-md-4 d-flex justify-content-center align-items-center">
-            <div class="border px-4 py-5">
+          <div class="col-md-6 col-lg-4 d-flex justify-content-center align-items-center">
+            <div class="border px-4 py-5 mt-1 mb-4">
               <div class="offer-main-first pb-4">
                 <h3 class="offer-heading-first font-weight-bold">Deal Of The Day</h3>
                 <p class="offer-subheading-second">Commit your decision to paper, just to bring it into focus. Then, go
@@ -447,7 +514,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-8">
+          <div class="col-md-6 col-lg-8">
             <div class="offer-main-second p-5 border">
               <div class="offer-sub py-4">
                 <h6>Potery & Art</h6>

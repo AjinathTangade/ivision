@@ -17,9 +17,11 @@ li.nav-item:after {
     background: #bababa;
     transition: width .3s;
 }
-p.spin-text{
+
+p.spin-text {
     font-size: 14px;
 }
+
 a.support-content-anchor:after {
     content: "";
     border: 0.5px solid #cbcbcbfa;
@@ -29,38 +31,58 @@ a.support-content-anchor:after {
     /* padding-right: 20px; */
 }
 
-  #spin:after {
-    content:"";
+#spin:after {
+    content: "";
     animation: spin 10s linear infinite;
-  }
-  @keyframes spin {
-    0% { content:"30% Off Everything | Code: SPOOKY30"; }
-    10% { content:"30% Off Everything | Code: SPOOKY30";}
-    60% { content: "2-Day Delivery - Get your glasses faster!"; }
-    100%{ content:"30% Off Everything | Code: SPOOKY30"; }
-  }
+}
+
+@keyframes spin {
+    0% {
+        content: "30% Off Everything | Code: SPOOKY30";
+    }
+
+    10% {
+        content: "30% Off Everything | Code: SPOOKY30";
+    }
+
+    60% {
+        content: "2-Day Delivery - Get your glasses faster!";
+    }
+
+    100% {
+        content: "30% Off Everything | Code: SPOOKY30";
+    }
+}
+
 ul.navbar-nav.m-auto.mb-2.mb-lg-0.d-flex {
     gap: 20px;
 }
+
 li.nav-item:hover:after {
     width: 100%;
 }
+
 a.nav-link.fw-bold {
     font-size: 14px;
 }
+
 span.navbar-icon i {
     font-size: 20px;
 }
-::-ms-input-placeholder { /* Edge 12-18 */
+
+::-ms-input-placeholder {
+    /* Edge 12-18 */
     font-size: 13px;
-  }
-  
-  ::placeholder {
+}
+
+::placeholder {
     font-size: 13px;
-  }
+}
+
 input.form-control {
     border-radius: 43px;
 }
+
 input.form-control {
 
     line-height: 9;
@@ -72,12 +94,12 @@ input.form-control {
 
 .dropdown:hover>.dropdown-menu {
     display: block;
-  }
-  
-  .dropdown>.dropdown-toggle:active {
+}
+
+.dropdown>.dropdown-toggle:active {
     /*Without this, clicking will make it sticky*/
-      pointer-events: none;
-  }
+    pointer-events: none;
+}
 
 
 
@@ -93,6 +115,7 @@ input.form-control {
     pointer-events: none;
     color: #aaa;
 }
+
 span.navbar-icon a {
     color: black;
 }
@@ -505,7 +528,6 @@ a.text-decoration-none.text-secondary {
     display: none;
 }
 
-
 /* slide end */
 
 p.offer-subheading-second {
@@ -521,8 +543,40 @@ a.pt-2.text-white {
 }
 
 .container-fluid.support {
-    background-color: #e9e8efba;
+    background-color: #ffffff00;
 }
+
+.support {
+    box-shadow: 0px 0px 24px -20px;
+}
+
+.dropdown-main-menu {
+    width: 800px;
+    padding: 30px;
+}
+img.drop-img {
+    width: 100%;
+    max-width: 120px;
+    border-radius: 10px;
+}
+
+.dropdown-first-third-sub {
+    gap: 12px;
+}
+.dropdown-first-second ul li a, .dropdown-first-first ul li a {
+    font-size: 14px;
+    line-height: 30px;
+}
+
+
+
+
+
+
+
+
+
+
 
 @media (min-width: 320px) and (max-width: 426px) {
 
@@ -572,9 +626,9 @@ a.pt-2.text-white {
     }
 
     h1.hero_heading {
-        font-size: 25px;
+        font-size: 22px;
         text-align: start;
-        line-height: 20px;
+        line-height: 32px;
     }
 
     p.hero_subheading {
@@ -621,5 +675,33 @@ a.pt-2.text-white {
         top: 16px;
         left: unset;
         right: 0;
+    }
+
+    img.d-block.w-100 {
+        height: 300px;
+        object-fit: cover;
+    }
+
+    p.spin-text {
+        font-size: 12px;
+    }
+
+    .carousel-caption {
+        bottom: 52px;
+    }
+
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+
+    .carousel-caption {
+        padding-top: 100px;
+        height: 100%;
+        bottom: 0;
+    }
+
+    h1.hero_heading {
+        font-size: 37px;
+        line-height: 2.5rem;
     }
 }
