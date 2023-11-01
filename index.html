@@ -44,7 +44,8 @@
   </div>
   <header>
     <nav class="navbar navbar-expand-lg navbar-light sm:p-0 mx-3">
-      <div class="d-flex justify-content-between align-items-center xl:d-flex xl:justify-content-evenly xl:align-items-center container">
+      <div
+        class="d-flex justify-content-between align-items-center justify-content-sm-between container">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -60,13 +61,13 @@
             <li class="nav-item px-1">
               <!-- <a class="nav-link active fw-bold" aria-current="page" href="#">Eyeglasses</a> -->
               <div class="dropdown dropdown-main-overlay">
-                <a class="nav-link active fw-bold" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                <a class="nav-link active fw-bold" type="button" id="dropdownMenuButton" data-toggle="dropdown" data-hover="dropdown"
                   aria-haspopup="true" aria-expanded="false">
                   Eyeglasses
                 </a>
-                <div class="dropdown-menu  dropdown-main-menu shadow border-0" aria-labelledby="dropdownMenuButton">
-                  
-                  <div class="dropdown-main d-flex justify-content-between">
+                <div class="dropdown-menu dropdown-main-menu shadow border-0" aria-labelledby="dropdownMenuButton">
+
+                  <div class="dropdown-main d-flex justify-content-between flex-wrap">
                     <div class="dropdown-first-first pr-4">
                       <ul class="list-unstyled">
                         <h6 class="text-secondary">Shop</h6>
@@ -75,7 +76,7 @@
                         <li><a href="#" class="text-dark">Men’s Eyeglasses</a></li>
                         <li><a href="#" class="text-dark">Kids’ Eyeglasses</a></li>
                         <li><a href="#" class="text-dark">On Sale</a></li>
-                      </ul>             
+                      </ul>
                     </div>
                     <div class="dropdown-first-second pr-3">
                       <ul class="list-unstyled">
@@ -88,30 +89,24 @@
                       </ul>
                     </div>
                     <div class="dropdown-first-third d:none d-lg-block">
-                          <div class="dropdown-first-third-sub d-flex justify-content-between align-items-center">
-                            <img src="./assets/img/drop-img-1.png" alt="drop-img-1" class="drop-img">
-                            <img src="./assets/img/drop-img-2.png" alt="drop-img-2" class="drop-img">
-                            <img src="./assets/img/drop-img-3.png" alt="drop-img-3" class="drop-img">
-                          </div>
+                      <div class="dropdown-first-third-sub d-flex justify-content-between align-items-center flex-wrap">
+                        <img src="./assets/img/drop-img-1.png" alt="drop-img-1" class="drop-img">
+                        <img src="./assets/img/drop-img-2.png" alt="drop-img-2" class="drop-img">
+                        <img src="./assets/img/drop-img-3.png" alt="drop-img-3" class="drop-img">
+                      </div>
                     </div>
                   </div>
-                  
                 </div>
-               
-
-
               </div>
-              
-              
             </li>
             <li class="nav-item px-1">
               <div class="dropdown">
-                <a class="nav-link active fw-bold" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                <a class="nav-link active fw-bold" type="button" id="dropdownMenuButton" data-toggle="dropdown" 
                   aria-haspopup="true" aria-expanded="false">
                   Sunglasses
                 </a>
-                <div class="dropdown-menu mt-3 dropdown-main-menu" aria-labelledby="dropdownMenuButton">
-                  <div class="dropdown-main d-flex justify-content-between">
+                <div class="dropdown-menu dropdown-main-menu" aria-labelledby="dropdownMenuButton">
+                  <div class="dropdown-main d-flex justify-content-between flex-wrap">
                     <div class="dropdown-first-first pr-4">
                       <ul class="list-unstyled">
                         <h6 class="text-secondary">Shop</h6>
@@ -120,7 +115,7 @@
                         <li><a href="#" class="text-dark">Men’s Eyeglasses</a></li>
                         <li><a href="#" class="text-dark">Kids’ Eyeglasses</a></li>
                         <li><a href="#" class="text-dark">On Sale</a></li>
-                      </ul>             
+                      </ul>
                     </div>
                     <div class="dropdown-first-second pr-3">
                       <ul class="list-unstyled">
@@ -133,11 +128,11 @@
                       </ul>
                     </div>
                     <div class="dropdown-first-third">
-                          <div class="dropdown-first-third-sub d-flex justify-content-between align-items-center">
-                            <img src="./assets/img/drop-img-4.png" alt="drop-img-1" class="drop-img">
-                            <img src="./assets/img/drop-img-5.png" alt="drop-img-2" class="drop-img">
-                            <img src="./assets/img/drop-img-6.png" alt="drop-img-3" class="drop-img">
-                          </div>
+                      <div class="dropdown-first-third-sub d-flex justify-content-between align-items-center flex-wrap">
+                        <img src="./assets/img/drop-img-4.png" alt="drop-img-1" class="drop-img">
+                        <img src="./assets/img/drop-img-5.png" alt="drop-img-2" class="drop-img">
+                        <img src="./assets/img/drop-img-6.png" alt="drop-img-3" class="drop-img">
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -145,10 +140,49 @@
               <!-- <a class="nav-link fw-bold" href="#">Sunglasses</a> -->
             </li>
             <li class="nav-item px-1">
-              <a class="nav-link fw-bold" href="#">Premium Brands</a>
+              <!-- <a class="nav-link fw-bold" href="#">Premium Brands</a> -->
+              <div class="dropdown">
+                <a class="nav-link active fw-bold" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  Premium Brands
+                </a>
+                <div class="dropdown-menu  dropdown-main-menu" aria-labelledby="dropdownMenuButton">
+                  <div class="dropdown-main d-flex justify-content-between align-items-center flex-wrap">
+                    <div class="dropdown-first-first pr-3 d-flex justify-content-between align-items-center flex-column">
+                      <img src="./assets/img/ray.png" alt="drop-img-1" class="drop-img-third">
+                      <a href="#" class="text-dark pt-3">Ray-Ban</a>
+                    </div>
+                    <div class="dropdown-first-second pr-3 d-flex justify-content-between align-items-center flex-column">
+                      <img src="./assets/img/oakley.png" alt="drop-img-1" class="drop-img-third">
+                      <a href="#" class="text-dark pt-3">Oakely</a>
+                    </div>
+                    <div class="dropdown-first-second pr-3 d-flex justify-content-between align-items-center flex-column">
+                      <img src="./assets/img/arnette.png" alt="drop-img-1" class="drop-img-third">
+                      <a href="#" class="text-dark pt-3">Arnette</a>
+                    </div>
+                    <div class="dropdown-first-second pr-3 d-flex justify-content-between align-items-center flex-column">
+                      <img src="./assets/img/vogue.png" alt="drop-img-1" class="drop-img-third">
+                      <a href="#" class="text-dark pt-3">Vogue Eyewear</a>
+                    </div>
+                    <div class="dropdown-first-second d-flex justify-content-between align-items-center flex-column">
+                      <img src="./assets/img/rflkt.png" alt="drop-img-1" class="drop-img-third">
+                      <a href="#" class="text-dark pt-3">Rflkt</a>
+                    </div>
+                  
+                  </div>
+                </div>
+              </div>
             </li>
             <li class="nav-item px-1">
               <a class="nav-link fw-bold fw-bolder" href="#">Lenses</a>
+            </li>
+            <li class="nav-item d-none d-block d-sm-none d-md-none d-lg-none">
+              <div class="d-flex justify-content-end">
+                <!-- <span class="navbar-icon mr-3 "><a href="#"><i class="bi bi-search fa-7x"></i></a></span> -->
+                <span class="navbar-icon mx-3"><a href="#"><i class="bi bi-person fa-7x"></i></a></span>
+                <span class="navbar-icon mr-3"><a href=""><i class="bi bi-heart fa-7x"></i></a></span>
+                <span class="navbar-icon"> <a href="#"><i class="bi bi-cart3 fa-7x"></i></a> </span>
+              </div>
             </li>
           </ul>
 
@@ -157,11 +191,11 @@
           <span class="fa fa-search form-control-feedback"> <i class="bi bi-search"></i></span>
           <input type="text" class="form-control pl-5 py-0" placeholder="Search">
         </div>
-        <div class=" d-flex justify-content-end">
+        <div class="d-md-flex d-lg-flex justify-content-end d-none d-sm-none">
           <!-- <span class="navbar-icon mr-3 "><a href="#"><i class="bi bi-search fa-7x"></i></a></span> -->
-          <span class="navbar-icon mx-3"><a href="#"><i class="bi bi-person fa-7x"></i></a></span>
-          <span class="navbar-icon mr-3"><a href=""><i class="bi bi-heart fa-7x"></i></a></span>
-          <span class="navbar-icon"> <a href="#"><i class="bi bi-cart3 fa-7x"></i></a> </span>
+          <span class="navbar-icon mx-3 d-none d-md-block d-lg-block"><a href="#"><i class="bi bi-person fa-7x"></i></a></span>
+          <span class="navbar-icon mr-3 d-none d-md-block d-lg-block"><a href=""><i class="bi bi-heart fa-7x"></i></a></span>
+          <span class="navbar-icon d-none d-md-block d-lg-block"> <a href="#"><i class="bi bi-cart3 fa-7x"></i></a> </span>
         </div>
       </div>
     </nav>
