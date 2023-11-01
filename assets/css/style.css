@@ -110,14 +110,16 @@ input.form-control {
     z-index: 1;
     left: 0;
 }
-.dropdown-main-overlay:hover .dropdown-overlay {
+ul.navbar-nav.m-auto.mb-2.mb-lg-0.d-flex:hover .dropdown-overlay {
+    display: block !important;
+}
+/* .dropdown-main-overlay:hover .dropdown-overlay {
     display: block !important;
     z-index: 1;
     width: 1877px;
-    /* right: 60px; */
     left: -619px;
     top: 57px;
-}
+} */
 
 .has-search .form-control-feedback {
     position: absolute;
