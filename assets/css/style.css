@@ -22,13 +22,21 @@ p.spin-text {
     font-size: 14px;
 }
 
-a.support-content-anchor:after {
+.support-sub::after {
     content: "";
     border: 0.5px solid #cbcbcbfa;
     height: 28px;
     position: absolute;
     margin-left: 50px;
-    /* padding-right: 20px; */
+}
+
+.support-content-anchor-last::after {
+    border: none;
+    height: 0px;
+}
+
+.support-content {
+    width: 100%;
 }
 
 #spin:after {
@@ -118,6 +126,7 @@ img.drop-img-third {
     object-fit: cover;
     height: 140px;
 }
+
 ul.navbar-nav:hover .dropdown-overlay {
     display: block !important;
     z-index: 1;
@@ -590,10 +599,64 @@ img.drop-img {
     line-height: 30px;
 }
 
+.every-vision-content h2 {
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.every-vision-content h6 {
+    font-size: 23px;
+    font-weight: 600;
+}
+
+.every-vision-content p {
+    font-size: 15px;
+}
+
+.every-vision-btn button {
+    font-size: 15px;
+    padding: 10px 30px;
+    margin: 10px 16px;
+}
+/* Home page css end */
+
+
+/* eyeglasses css */
+ol.breadcrumb li {
+    font-size: 14px;
+    font-weight: 400;
+}
+ol.breadcrumb {
+    background: white;
+    padding: 16px 0px;
+}
+
+.breadcrumb-heading h2 {
+    font-size: 43px;
+    font-weight: 700;
+}
+.btn-outline-dark:hover {
+    color: #000;
+    background-color: #343a4000;
+    border-color: #343a40;
+}
+.filer-btn{
+    gap: 20px;
+}
+ .filter-dropdown, .filer-btn button {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.filter-dropdown a {
+    font-size: 14px;
+    font-weight: 500;
+}
 
 
 
 
+/* eyeglasses css end*/
 
 
 @media (min-width: 320px) and (max-width: 426px) {
@@ -703,27 +766,73 @@ img.drop-img {
         bottom: 52px;
     }
 
-    ul.navbar-nav:hover .dropdown-overlay{
+    ul.navbar-nav:hover .dropdown-overlay {
         display: none !important;
     }
-    .dropdown-menu.dropdown-main-menu{
+
+    .dropdown-menu.dropdown-main-menu {
         overflow-x: auto;
-        width:100%;
+        width: 100%;
     }
+
     img.drop-img {
         max-width: 99px;
         margin-top: 15px;
     }
+
     img.drop-img-third {
         max-width: 85px;
         height: 85px;
     }
-    ul.navbar-nav{
+
+    ul.navbar-nav {
         gap: 0px;
     }
-    span.navbar-icon{
+
+    span.navbar-icon {
         width: 100%;
         max-width: 35px;
+    }
+
+    .support-content {
+        width: 100%;
+        overflow-x: auto;
+        white-space: nowrap;
+        height: 60px;
+        padding: 0px 20px;
+        background: #eeeeee45;
+    }
+
+    .support-sub,
+    .support-content-anchor {
+        padding-right: 30px;
+    }
+
+    .support-sub::after {
+        margin-left: 0px;
+    }
+
+    .support {
+        padding: 0px 15px !important;
+    }
+
+    .support-content::-webkit-scrollbar {
+        display: none;
+    }
+
+    .every-vision-content h2 {
+        font-size: 40px;
+    }
+
+    .trending-product {
+        padding-top: 20px !important;
+    }
+
+    .every-vision-btn {
+        display: flex;
+    }
+    button.btn.btn-outline-dark {
+        padding: 10px 18px;
     }
 }
 
@@ -739,7 +848,8 @@ img.drop-img {
         font-size: 37px;
         line-height: 2.5rem;
     }
-    ul.navbar-nav:hover .dropdown-overlay{
+
+    ul.navbar-nav:hover .dropdown-overlay {
         z-index: 0 !important;
         display: none !important;
     }
