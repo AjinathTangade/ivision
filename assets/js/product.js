@@ -5,7 +5,7 @@ var products = [
     description: "Timeless style with UV protection and polarized lenses.",
     price: 99.99,
     size: "Medium",
-    image: "wayfarer.jpg",
+    images: [ "/assets/img/images-web/mt6508.jpg", "/assets/img/images-web/mt6508_w0.jpg"],
   },
   {
     id: 2,
@@ -13,7 +13,7 @@ var products = [
     description: "Vintage-inspired round frames with clear lenses.",
     price: 49.99,
     size: "Small",
-    image: "roundglasses.jpg",
+    images: ["/assets/img/images-web/mt6565_w0.jpg", "/assets/img/images-web/mt6565.jpg"],
   },
   {
     id: 3,
@@ -21,7 +21,7 @@ var products = [
     description: "High-quality reading glasses with a stylish frame.",
     price: 79.99,
     size: "Small",
-    image: "readingglasses.jpg",
+    images: [ "/assets/img/images-web/mt6812.jpg", "/assets/img/images-web/mt6812_w0.jpg"],
   },
   {
     id: 4,
@@ -30,7 +30,7 @@ var products = [
       "Durable sports glasses with shatterproof lenses for active lifestyles.",
     price: 69.99,
     size: "Large",
-    image: "sportseyewear.jpg",
+    images: ["mt6834_w0.jpg", "mt6834.jpg"],
   },
   {
     id: 5,
@@ -38,7 +38,7 @@ var products = [
     description: "Elegant cat-eye frames for a chic look.",
     price: 119.99,
     size: "Medium",
-    image: "cateyeglasses.jpg",
+    images: ["mt6960_w0.jpg", "mt6960.jpg"],
   },
   {
     id: 6,
@@ -46,7 +46,7 @@ var products = [
     description: "Classic aviator style with prescription lenses.",
     price: 129.99,
     size: "Large",
-    image: "aviatorglasses.jpg",
+    images: ["mt7215_w0.jpg", "mt7215.jpg"],
   },
   {
     id: 7,
@@ -55,7 +55,7 @@ var products = [
       "Colorful and playful glasses for children with impact-resistant lenses.",
     price: 39.99,
     size: "Kids",
-    image: "kidsglasses.jpg",
+    images: ["pl4729_3.jpg", "pl4729_w0.jpg"],
   },
   {
     id: 8,
@@ -63,7 +63,7 @@ var products = [
     description: "Oversized frames for a bold and trendy look.",
     price: 89.99,
     size: "Large",
-    image: "oversizedframes.jpg",
+    images: ["pl4729_3.jpg", "pl4729_w0.jpg"],
   },
   {
     id: 9,
@@ -72,7 +72,7 @@ var products = [
       "Computer glasses to reduce eye strain from screens with anti-blue light coating.",
     price: 59.99,
     size: "Medium",
-    image: "computer glasses.jpg",
+    images: ["pl6453_w0.jpg", "pl6453.jpg"],
   },
   {
     id: 10,
@@ -80,7 +80,7 @@ var products = [
     description: "Bifocal reading glasses with a sophisticated frame design.",
     price: 69.99,
     size: "Medium",
-    image: "bifocalglasses.jpg",
+    images: ["pl6877_w0.jpg", "pl6877.jpg"],
   },
   {
     id: 11,
@@ -88,7 +88,7 @@ var products = [
     description: "Trendy tortoise shell frames for a fashion-forward look.",
     price: 109.99,
     size: "Medium",
-    image: "tortoiseglasses.jpg",
+    images: ["roundglasses.jpg", "roundglasses2.jpg"],
   },
   {
     id: 12,
@@ -97,7 +97,7 @@ var products = [
       "Wraparound sunglasses for outdoor enthusiasts with UV protection.",
     price: 79.99,
     size: "Large",
-    image: "wraparoundsunglasses.jpg",
+    images: ["roundglasses.jpg", "roundglasses2.jpg"],
   },
   {
     id: 13,
@@ -106,7 +106,7 @@ var products = [
       "Rimless reading glasses for a minimalist and lightweight design.",
     price: 59.99,
     size: "Small",
-    image: "rimlessglasses.jpg",
+    images: ["roundglasses.jpg", "roundglasses2.jpg"],
   },
   {
     id: 14,
@@ -115,7 +115,7 @@ var products = [
       "Pilot sunglasses with a classic aviator style and polarized lenses.",
     price: 129.99,
     size: "Large",
-    image: "pilotsunglasses.jpg",
+    images: ["roundglasses.jpg", "roundglasses2.jpg"],
   },
   {
     id: 15,
@@ -124,7 +124,7 @@ var products = [
       "Designer cat-eye frames with a luxurious design and metal accents.",
     price: 149.99,
     size: "Medium",
-    image: "designercateye.jpg",
+    images: ["roundglasses.jpg", "roundglasses2.jpg"],
   },
   {
     id: 16,
@@ -133,7 +133,7 @@ var products = [
       "Square frames with a retro look and prescription lens options.",
     price: 69.99,
     size: "Medium",
-    image: "retrosquare.jpg",
+    images: ["roundglasses.jpg", "roundglasses2.jpg"],
   },
   {
     id: 17,
@@ -141,7 +141,7 @@ var products = [
     description: "Round sunglasses with a vintage appeal and gradient lenses.",
     price: 89.99,
     size: "Medium",
-    image: "vintageround.jpg",
+    images: ["roundglasses.jpg", "roundglasses2.jpg"],
   },
   {
     id: 18,
@@ -149,7 +149,7 @@ var products = [
     description: "Metal-frame glasses with a modern, lightweight design.",
     price: 79.99,
     size: "Medium",
-    image: "metalframe.jpg",
+    images: ["roundglasses.jpg", "roundglasses2.jpg"],
   },
   {
     id: 19,
@@ -157,7 +157,7 @@ var products = [
     description: "Geometric shape frames for a unique and artistic look.",
     price: 119.99,
     size: "Medium",
-    image: "geometricshape.jpg",
+    images: ["roundglasses.jpg", "roundglasses2.jpg"],
   },
   {
     id: 20,
@@ -166,7 +166,7 @@ var products = [
       "Prescription glasses designed for sports and outdoor activities.",
     price: 99.99,
     size: "Large",
-    image: "sportsprescription.jpg",
+    images: ["roundglasses.jpg", "roundglasses2.jpg"],
   },
   {
     id: 21,
@@ -175,7 +175,7 @@ var products = [
       "Aviator sunglasses with mirrored lenses for a bold and stylish appearance.",
     price: 109.99,
     size: "Large",
-    image: "aviatormirrored.jpg",
+    images: ["roundglasses.jpg", "roundglasses2.jpg"],
   },
   {
     id: 22,
@@ -184,7 +184,7 @@ var products = [
       "Oversized sunglasses with trendy colors and full UV protection.",
     price: 79.99,
     size: "Large",
-    image: "trendyoversized.jpg",
+    images: ["roundglasses.jpg", "roundglasses2.jpg"],
   },
   {
     id: 23,
@@ -193,7 +193,7 @@ var products = [
       "Eyeglasses with bamboo wood frames for an eco-friendly and unique style.",
     price: 129.99,
     size: "Medium",
-    image: "bamboowood.jpg",
+    images: ["roundglasses.jpg", "roundglasses2.jpg"],
   },
   {
     id: 24,
@@ -201,7 +201,7 @@ var products = [
     description: "Hexagonal frames with a fashionable and geometric design.",
     price: 119.99,
     size: "Medium",
-    image: "hexagonalglasses.jpg",
+    images: ["roundglasses.jpg", "roundglasses2.jpg"],
   },
   {
     id: 25,
@@ -210,43 +210,15 @@ var products = [
       "Wraparound sunglasses with polarized lenses and a secure fit for sports.",
     price: 89.99,
     size: "Large",
-    image: "sportswraparound.jpg",
+    images: ["roundglasses.jpg", "roundglasses2.jpg"],
   },
 ];
 
-// Your array of products
-var productss = [
-  {
-    id: 1,
-    title: "Classic Wayfarer Sunglasses",
-    description: "Timeless style with UV protection and polarized lenses.",
-    price: 99.99,
-    size: "Medium",
-    images: ["wayfarer.jpg", "wayfarer2.jpg"],
-  },
-  {
-    id: 2,
-    title: "Retro Round Glasses",
-    description: "Vintage-inspired round frames with clear lenses.",
-    price: 49.99,
-    size: "Small",
-    images: ["roundglasses.jpg", "roundglasses2.jpg"],
-  },
-  {
-    id: 3,
-    title: "Retro Round Glasses",
-    description: "Vintage-inspired round frames with clear lenses.",
-    price: 49.99,
-    size: "Small",
-    images: ["roundglasses.jpg", "roundglasses2.jpg"],
-  },
-  // Add more products here...
-];
 
 // Function to generate HTML for each product
 function generateProductHTML(product) {
   return `
-  <div class="product mb-3">
+  <div class="product mb-3 eyeglass">
   <a href="#">
     <div class="product-single-card">
       <div class="product-top-area">
@@ -306,11 +278,21 @@ function generateProductHTML(product) {
 
 // Function to insert product HTML into the page
 function displayProducts() {
-  let productListDiv = document.getElementById("productList");
+let counter=0;
 
-  productss.forEach(function (product) {
+  let productListDiv = document.getElementById("productList");
+  let productListSecond = document.getElementById("productListSecond");
+
+  products.forEach(function (product) {
+    if(counter < 9){
     let productHTML = generateProductHTML(product);
     productListDiv.innerHTML += productHTML;
+    counter ++;
+    } else if(counter>=9 && counter < 18){
+      let productSecond = generateProductHTML(product);
+      productListSecond.innerHTML += productSecond;
+      counter ++;
+    }
   });
 }
 
