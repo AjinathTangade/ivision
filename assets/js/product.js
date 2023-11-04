@@ -6,6 +6,7 @@ var products = [
     price: 99.99,
     size: "Medium",
     images: [ "/assets/img/images-web/mt6508.jpg", "/assets/img/images-web/mt6508_w0.jpg"],
+    delivery:"2-Day DELICERY",
   },
   {
     id: 2,
@@ -47,6 +48,7 @@ var products = [
     price: 129.99,
     size: "Large",
     images: ["mt7215_w0.jpg", "mt7215.jpg"],
+    delivery:"2-Day DELICERY",
   },
   {
     id: 7,
@@ -220,11 +222,15 @@ function generateProductHTML(product) {
   return `
   <div class="product mb-3 eyeglass">
   <a href="#">
-    <div class="product-single-card">
+    <div class="product-single-card product-single-card-eyeglass">
       <div class="product-top-area">
-        <div class="product-discount">
-        $${product.price}
-        </div>
+      ${product.delivery===undefined ?
+        `<div class="product-discount-eyeglass d-none">
+        </div>`:
+        `<div class="product-discount-eyeglass">
+        ${product.delivery}
+        </div>`
+      }
         <div class="product-img">
           <div class="first-view">
             <img src="${product.images[0]}" alt="${product.title}" class="product-img">
@@ -254,13 +260,12 @@ function generateProductHTML(product) {
         <h6 class="product-title text-truncate"><a href="#"
             class="text-decoration-none text-secondary">${product.description}</a></h6>
         <div class="d-flex flex-wrap align-items-center pb-2">
-          <div class="new-price">
+          <div class="eyeglass-price new-price">
           $${product.price}
           </div>
-          <div class="old-price">
+          <div class="eyeglass-price-old old-price">
             $50.45
           </div>
-          <p>Size: ${product.size}</p>
           <div class="d-flex align-items-center product-review">
             <div class="review-star me-1">
               <i class="bi bi-star-fill"></i>
@@ -284,11 +289,11 @@ let counter=0;
   let productListSecond = document.getElementById("productListSecond");
 
   products.forEach(function (product) {
-    if(counter < 9){
+    if(counter < 6){
     let productHTML = generateProductHTML(product);
     productListDiv.innerHTML += productHTML;
     counter ++;
-    } else if(counter>=9 && counter < 18){
+    } else if(counter>=6 && counter < 12){
       let productSecond = generateProductHTML(product);
       productListSecond.innerHTML += productSecond;
       counter ++;

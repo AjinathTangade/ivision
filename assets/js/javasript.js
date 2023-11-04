@@ -21,3 +21,13 @@ $(".logos-slider").slick({
     },
   ],
 });
+
+$(window).scroll(function () {
+  if ($(window).scrollTop() >= 300) {
+    $("accordion").addClass("fixed-header");
+    $("accordion card").addClass("visible-title");
+  } else {
+    $("nav").removeClass("fixed-header");
+    $("accordion card").removeClass("visible-title");
+  }
+});
