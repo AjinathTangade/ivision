@@ -422,6 +422,8 @@ function displayProducts() {
 
   let productListDiv = document.getElementById("productList");
   let productListSecond = document.getElementById("productListSecond");
+  let productListThird = document.getElementById("productListThird");
+  let productListFour = document.getElementById("productListFour");
 
   products.forEach(function (product) {
     if (counter < 6) {
@@ -431,6 +433,14 @@ function displayProducts() {
     } else if (counter >= 6 && counter < 12) {
       let productSecond = generateProductHTML(product);
       productListSecond.innerHTML += productSecond;
+      counter++;
+    } else if (counter >= 12 && counter < 18) {
+      let productThird = generateProductHTML(product);
+      productListThird.innerHTML += productThird;
+      counter++;
+    } else if (counter >= 18 && counter < 24) {
+      let productFour = generateProductHTML(product);
+      productListFour.innerHTML += productFour;
       counter++;
     }
   });
