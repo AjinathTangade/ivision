@@ -436,8 +436,9 @@ cardCount();
 
 function addToBag(itemId) {
   bagItem.push(itemId);
-  // console.log(bagItem);
+  console.log(bagItem);
   cardCount();
+  addCard(itemId);
 }
 
 function cardCount() {
@@ -448,6 +449,15 @@ function cardCount() {
   } else {
     passCount.style.visibility = "hidden";
   }
+}
+
+function addCard(itemId) {
+  const addcard = document.querySelector(".addcard");
+  addcard.innerHTML = `
+  <div>
+  <h1>${products[itemId].title}</h1>
+  </div>
+  `;
 }
 
 // Function to insert product HTML into the page
