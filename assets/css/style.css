@@ -618,6 +618,7 @@ img.drop-img {
   padding: 10px 30px;
   margin: 10px 16px;
 }
+
 /* Home page css end */
 
 /* eyeglasses css */
@@ -625,6 +626,7 @@ ol.breadcrumb li {
   font-size: 14px;
   font-weight: 400;
 }
+
 ol.breadcrumb {
   background: white;
   padding: 16px 0px;
@@ -634,14 +636,17 @@ ol.breadcrumb {
   font-size: 43px;
   font-weight: 700;
 }
+
 .btn-outline-dark:hover {
   color: #000;
   background-color: #343a4000;
   border-color: #343a40;
 }
+
 .filer-btn {
   gap: 20px;
 }
+
 .filter-dropdown,
 .filer-btn button {
   font-size: 14px;
@@ -657,9 +662,11 @@ ol.breadcrumb {
   width: 100%;
   max-width: 260px;
 }
+
 .eyeglass img {
   background: #f4f5f5;
 }
+
 .eyeglasses span.carousel-control-prev-icon.carousel-control-prev-icon-product {
   background-image: url(../img/previous.png) !important;
 }
@@ -671,15 +678,19 @@ ol.breadcrumb {
 button.carousel-control-prev.carousel-control-prev-product.eyeglasses {
   left: -40px;
 }
+
 button.carousel-control-next.carousel-control-next-product.eyeglasses {
   right: -40px;
 }
+
 .eyeglass-price.new-price {
   padding-right: 4px !important;
 }
+
 .eyeglass-price-old.old-price {
   padding-right: 10px !important;
 }
+
 .product-discount-eyeglass {
   position: absolute;
   top: 10px;
@@ -694,6 +705,7 @@ button.carousel-control-next.carousel-control-next-product.eyeglasses {
   font-size: 11px;
   font-weight: 600;
 }
+
 .product-single-card-eyeglass {
   padding: 16px !important;
 }
@@ -703,28 +715,35 @@ button.carousel-control-next.carousel-control-next-product.eyeglasses {
   height: 200px;
   object-fit: cover;
 }
+
 .eyeglasses-review {
   font-size: 14px;
 }
+
 .eyeglasses-details-heading p {
   font-size: 14px;
 }
+
 /* eyeglasses css end*/
 .accordion .card-header:after {
   content: "-";
   float: right;
 }
+
 .accordion .card-header.collapsed:after {
   /* symbol for "collapsed" panels */
   content: "+";
 }
+
 .card-header {
   background: none;
 }
+
 label.form-check-label {
   font-size: 13px;
   font-weight: 400;
 }
+
 a.card-title {
   font-weight: 500;
   font-size: 15px;
@@ -750,10 +769,26 @@ a.card-title {
   background-color: #858585;
   border-radius: 50%;
 }
+
 img.card-img-top {
   width: 100%;
   max-width: 60px;
 }
+
+span.navbar-light.navbar-toggler-icon.eyeglasses-filter-icon {
+  background-image: url(/assets/img/list.png);
+}
+span.card-count {
+  position: relative;
+  top: -18px;
+  left: -14px;
+  background: black;
+  font-size: 13px;
+  padding: 0px 4px;
+  border-radius: 50%;
+  color: white;
+}
+
 @media (min-width: 320px) and (max-width: 426px) {
   nav.navbar.navbar-expand-lg.navbar-light.sm\:p-0 {
     padding: 0.5rem 0rem;
@@ -925,8 +960,27 @@ img.card-img-top {
   .every-vision-btn {
     display: flex;
   }
+
   button.btn.btn-outline-dark {
     padding: 10px 18px;
+  }
+  .eyeglasses-main,
+  .product-banner {
+    margin: 20px 0px !important;
+  }
+  .breadcrumb-heading h2 {
+    font-size: 27px;
+  }
+  ol.breadcrumb {
+    margin: 0;
+  }
+  .eyeglass {
+    width: 100%;
+    max-width: 195px;
+  }
+  .product-single-card-eyeglass {
+    height: 100%;
+    min-height: 365px;
   }
 }
 
@@ -945,5 +999,15 @@ img.card-img-top {
   ul.navbar-nav:hover .dropdown-overlay {
     z-index: 0 !important;
     display: none !important;
+  }
+}
+@media (min-width: 426px) and (max-width: 1024px) {
+  .eyeglass {
+    width: 100%;
+    max-width: 220px;
+  }
+  .product-single-card.product-single-card-eyeglass {
+    height: 100%;
+    min-height: 366px;
   }
 }

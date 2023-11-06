@@ -283,7 +283,10 @@ var products = [
       "Aviator sunglasses with mirrored lenses for a bold and stylish appearance.",
     price: 109.99,
     size: "Large",
-    images: ["/assets/img/product-imeges/pl7784.jpg", "/assets/img/product-imeges/pl7784_w0.jpg"],
+    images: [
+      "/assets/img/product-imeges/pl7784.jpg",
+      "/assets/img/product-imeges/pl7784_w0.jpg",
+    ],
     rating: 4.0,
     ratingCount: 123,
   },
@@ -294,7 +297,10 @@ var products = [
       "Oversized sunglasses with trendy colors and full UV protection.",
     price: 79.99,
     size: "Large",
-    images: ["/assets/img/product-imeges/pl6453.jpg", "/assets/img/product-imeges/pl6453_w0.jpg"],
+    images: [
+      "/assets/img/product-imeges/pl6453.jpg",
+      "/assets/img/product-imeges/pl6453_w0.jpg",
+    ],
     delivery: "1-Day DELICERY",
     rating: 4.3,
     ratingCount: 345,
@@ -306,7 +312,10 @@ var products = [
       "Eyeglasses with bamboo wood frames for an eco-friendly and unique style.",
     price: 129.99,
     size: "Medium",
-    images: ["/assets/img/product-imeges/mt7215.jpg", "/assets/img/product-imeges/mt7215_w0.jpg"],
+    images: [
+      "/assets/img/product-imeges/mt7215.jpg",
+      "/assets/img/product-imeges/mt7215_w0.jpg",
+    ],
     rating: 4.5,
     ratingCount: 543,
   },
@@ -316,9 +325,13 @@ var products = [
     description: "Hexagonal frames with a fashionable and geometric design.",
     price: 119.99,
     size: "Medium",
-    images: ["/assets/img/product-imeges/pl7790.jpg", "/assets/img/product-imeges/pl7790_w0.jpg"],
+    images: [
+      "/assets/img/product-imeges/pl7790.jpg",
+      "/assets/img/product-imeges/pl7790_w0.jpg",
+    ],
     rating: 3.3,
     ratingCount: 654,
+    delivery: "Out of Stock",
   },
   {
     id: 25,
@@ -338,7 +351,7 @@ var products = [
 function generateProductHTML(product) {
   return `
   <div class="product mb-3 eyeglass">
-  <a href="#">
+  <a class="btn" onclick="addToBag(${product.id})">
     <div class="product-single-card product-single-card-eyeglass">
       <div class="product-top-area">
       ${
@@ -409,17 +422,37 @@ function generateProductHTML(product) {
            
           </div>
         </div>
+      
       </div>
     </div>
   </a>
+  
 </div>
     `;
+}
+
+let bagItem = [];
+cardCount();
+
+function addToBag(itemId) {
+  bagItem.push(itemId);
+  // console.log(bagItem);
+  cardCount();
+}
+
+function cardCount() {
+  const passCount = document.querySelector(".card-count");
+  if (bagItem.length > 0) {
+    passCount.style.visibility = "visible";
+    passCount.innerHTML = bagItem.length;
+  } else {
+    passCount.style.visibility = "hidden";
+  }
 }
 
 // Function to insert product HTML into the page
 function displayProducts() {
   let counter = 0;
-
   let productListDiv = document.getElementById("productList");
   let productListSecond = document.getElementById("productListSecond");
   let productListThird = document.getElementById("productListThird");
