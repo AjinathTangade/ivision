@@ -7,6 +7,7 @@
 
 p {
   font-family: "Poppins", sans-serif !important;
+  font-size: 14px;
 }
 
 li.nav-item:after {
@@ -749,7 +750,10 @@ a.card-title {
   background-color: #858585;
   border-radius: 50%;
 }
-
+img.card-img-top {
+  width: 100%;
+  max-width: 60px;
+}
 @media (min-width: 320px) and (max-width: 426px) {
   nav.navbar.navbar-expand-lg.navbar-light.sm\:p-0 {
     padding: 0.5rem 0rem;
