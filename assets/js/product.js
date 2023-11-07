@@ -390,12 +390,18 @@ function generateProductHTML(product) {
         </div>
       </div>
       <div class="product-info">
-        <h6 class="product-category m-0"><a href="#"
-            class="text-decoration-none text-dark m-0">${product.title}</a></h6>
-        <h6 class="product-title text-truncate"><a href="#"
+        <h6 class="product-category m-0">
+         <a href="#"
+            class="text-decoration-none text-dark m-0">${product.title}
+          </a>
+        </h6>
+        <h6 class="product-title text-truncate">
+          <a href="#"
             class="text-decoration-none text-secondary">${
               product.description
-            }</a></h6>
+            }
+          </a>
+        </h6>
         <div class="d-flex flex-wrap align-items-center pb-2">
           <div class="eyeglass-price new-price">
           $${product.price}
@@ -426,39 +432,11 @@ function generateProductHTML(product) {
       </div>
     </div>
   </a>
-  
 </div>
+
     `;
 }
 
-let bagItem = [];
-cardCount();
-
-function addToBag(itemId) {
-  bagItem.push(itemId);
-  console.log(bagItem);
-  cardCount();
-  addCard(itemId);
-}
-
-function cardCount() {
-  const passCount = document.querySelector(".card-count");
-  if (bagItem.length > 0) {
-    passCount.style.visibility = "visible";
-    passCount.innerHTML = bagItem.length;
-  } else {
-    passCount.style.visibility = "hidden";
-  }
-}
-
-function addCard(itemId) {
-  const addcard = document.querySelector(".addcard");
-  addcard.innerHTML = `
-  <div>
-  <h1>${products[itemId].title}</h1>
-  </div>
-  `;
-}
 
 // Function to insert product HTML into the page
 function displayProducts() {
@@ -471,6 +449,9 @@ function displayProducts() {
   products.forEach(function (product) {
     if (counter < 6) {
       let productHTML = generateProductHTML(product);
+      if(!productListDiv){
+        return;
+      }
       productListDiv.innerHTML += productHTML;
       counter++;
     } else if (counter >= 6 && counter < 12) {
@@ -489,5 +470,45 @@ function displayProducts() {
   });
 }
 
+
+
+let bagItem = [];
+onLoad();
+
+function onLoad() {
+  let bagItemsStr = localStorage.getItem('bagItem');
+  bagItem = bagItemsStr ? JSON.parse(bagItemsStr) : [];
+  cardCount();
+
+}
+
+function addToBag(itemId) {
+  bagItem.push(itemId);
+  localStorage.setItem('bagItem', JSON.stringify(bagItem));
+  console.log(bagItem);
+  cardCount();
+  // window.location.href ='/assets/pages/singleproduct.html';
+}
+
+function cardCount() {
+  const passCount = document.querySelector(".card-count");
+  if (bagItem.length > 0) {
+    passCount.style.visibility = "visible";
+    passCount.innerHTML = bagItem.length;
+  } else {
+    passCount.style.visibility = "hidden";
+  }
+}
+
+
+
+// function openUrl(itemId){
+//   const singleProduct = document.querySelector(".product");
+//   console.log(itemId);
+
+//   localStorage.setItem("Iid","itemId");
+//   window.location.href ='/assets/pages/singleproduct.html';
+
+// }
 // Call the function to display products when the page loads
 window.onload = displayProducts;
