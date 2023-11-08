@@ -347,11 +347,13 @@ var products = [
   },
 ];
 
+
+
 // Function to generate HTML for each product
 function generateProductHTML(product) {
   return `
-  <div class="product mb-3 eyeglass">
-  <a class="btn" onclick="addToBag(${product.id})">
+  <div class="product mb-3 eyeglass ">
+  <a class="btn" onclick="openUrl(${product.id})">
     <div class="product-single-card product-single-card-eyeglass">
       <div class="product-top-area">
       ${
@@ -375,8 +377,8 @@ function generateProductHTML(product) {
           </div>
         </div>
         <div class="sideicons">
-          <button class="sideicons-btn">
-            <i class="bi bi-cart-plus-fill"></i>
+          <button class="sideicons-btn" onclick="addToBag(${product.id})">
+            <i class="bi bi-cart-plus-fill" ></i>
           </button>
           <button class="sideicons-btn">
             <i class="bi bi-eye-fill"></i>
@@ -438,6 +440,8 @@ function generateProductHTML(product) {
 }
 
 
+  
+
 // Function to insert product HTML into the page
 function displayProducts() {
   let counter = 0;
@@ -476,15 +480,13 @@ let bagItem = [];
 onLoad();
 
 function onLoad() {
-  let bagItemsStr = localStorage.getItem('bagItem');
-  bagItem = bagItemsStr ? JSON.parse(bagItemsStr) : [];
   cardCount();
-
 }
 
 function addToBag(itemId) {
   bagItem.push(itemId);
   localStorage.setItem('bagItem', JSON.stringify(bagItem));
+  localStorage.setItem('bagItem', 'itemId');
   console.log(bagItem);
   cardCount();
   // window.location.href ='/assets/pages/singleproduct.html';
@@ -500,15 +502,18 @@ function cardCount() {
   }
 }
 
-
-
-// function openUrl(itemId){
-//   const singleProduct = document.querySelector(".product");
-//   console.log(itemId);
-
-//   localStorage.setItem("Iid","itemId");
-//   window.location.href ='/assets/pages/singleproduct.html';
-
+// function addToBagSingle(productId){
+//   addToBag(productId);
+//   //openUrl(productId);
 // }
+
+function openUrl(itemId){
+  //console.log(itemId);
+  const productId = itemId - 1;
+  localStorage.setItem("Iid",productId);
+  localStorage.setItem("productsArray", JSON.stringify(products[productId]));
+  window.location.href ='/assets/pages/singleproduct.html';
+
+}
 // Call the function to display products when the page loads
 window.onload = displayProducts;
