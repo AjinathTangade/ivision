@@ -788,6 +788,10 @@ span.card-count {
   border-radius: 50%;
   color: white;
 }
+.find-your-size, .size-title, .alert.alert-warning, span.product-reting, .price-subject {
+  font-size: 13px;
+  gap: 6px;
+}
 
 @media (min-width: 320px) and (max-width: 426px) {
   nav.navbar.navbar-expand-lg.navbar-light.sm\:p-0 {

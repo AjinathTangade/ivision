@@ -347,8 +347,6 @@ var products = [
   },
 ];
 
-
-
 // Function to generate HTML for each product
 function generateProductHTML(product) {
   return `
@@ -399,9 +397,7 @@ function generateProductHTML(product) {
         </h6>
         <h6 class="product-title text-truncate">
           <a href="#"
-            class="text-decoration-none text-secondary">${
-              product.description
-            }
+            class="text-decoration-none text-secondary">${product.description}
           </a>
         </h6>
         <div class="d-flex flex-wrap align-items-center pb-2">
@@ -439,9 +435,6 @@ function generateProductHTML(product) {
     `;
 }
 
-
-  
-
 // Function to insert product HTML into the page
 function displayProducts() {
   let counter = 0;
@@ -453,7 +446,7 @@ function displayProducts() {
   products.forEach(function (product) {
     if (counter < 6) {
       let productHTML = generateProductHTML(product);
-      if(!productListDiv){
+      if (!productListDiv) {
         return;
       }
       productListDiv.innerHTML += productHTML;
@@ -474,8 +467,6 @@ function displayProducts() {
   });
 }
 
-
-
 let bagItem = [];
 onLoad();
 
@@ -485,8 +476,8 @@ function onLoad() {
 
 function addToBag(itemId) {
   bagItem.push(itemId);
-  localStorage.setItem('bagItem', JSON.stringify(bagItem));
-  localStorage.setItem('bagItem', 'itemId');
+  localStorage.setItem("bagItem", JSON.stringify(bagItem));
+  localStorage.setItem("bagItem", "itemId");
   console.log(bagItem);
   cardCount();
   // window.location.href ='/assets/pages/singleproduct.html';
@@ -507,13 +498,12 @@ function cardCount() {
 //   //openUrl(productId);
 // }
 
-function openUrl(itemId){
+function openUrl(itemId) {
   //console.log(itemId);
   const productId = itemId - 1;
-  localStorage.setItem("Iid",productId);
+  localStorage.setItem("Iid", productId);
   localStorage.setItem("productsArray", JSON.stringify(products[productId]));
-  window.location.href ='/assets/pages/singleproduct.html';
-
+  window.location.href = "/assets/pages/singleproduct.html";
 }
 // Call the function to display products when the page loads
 window.onload = displayProducts;
