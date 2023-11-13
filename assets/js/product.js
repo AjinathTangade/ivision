@@ -8,6 +8,10 @@ var products = [
     images: [
       "/assets/img/product-imeges/mt6812.jpg",
       "/assets/img/product-imeges/mt6812_w0.jpg",
+      "/assets/img/product-imeges/mt6809_1.png",
+      "/assets/img/product-imeges/mt6809_2.png",
+      "/assets/img/product-imeges/mt6809_0.png",
+      "/assets/img/product-imeges/mt6809_m0.png",
     ],
     delivery: "2-Day DELICERY",
     rating: 4.3,
@@ -350,8 +354,7 @@ var products = [
 // Function to generate HTML for each product
 function generateProductHTML(product) {
   return `
-  <div class="product mb-3 eyeglass ">
-  <a class="btn" onclick="openUrl(${product.id})">
+  <div class="product mb-3 eyeglass " onclick="openUrl(${product.id})"> 
     <div class="product-single-card product-single-card-eyeglass">
       <div class="product-top-area">
       ${
@@ -429,7 +432,6 @@ function generateProductHTML(product) {
       
       </div>
     </div>
-  </a>
 </div>
 
     `;
@@ -468,11 +470,11 @@ function displayProducts() {
 }
 
 let bagItem = [];
-onLoad();
+// onLoad();
 
-function onLoad() {
-  cardCount();
-}
+// function onLoad() {
+//   cardCount();
+// }
 
 function addToBag(itemId) {
   bagItem.push(itemId);
